@@ -1,0 +1,169 @@
+* {
+   
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: aliceblue;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body {
+    background-image: url(src/img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+label {
+    display: block;
+}
+
+#submitButton {
+    width: 40px;
+    height: 40px;
+    margin-bottom:17px;
+    align-items: center;
+    background-color: #10101D;
+    border: 0px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 40px;
+    transform-origin: center;
+    user-select: none;
+    outline:none ;
+}
+
+#submitButton:hover {
+    color:  #00E7FF;
+}
+
+.inputBoxInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    border-width:0px;
+    border-bottom-width:3px ;
+    border-color: antiquewhite;
+}
+
+#input {
+    outline: 0;
+    height: 40px;
+    font-size: 17px;
+    width: 90%;
+    background-color: #10101D;
+    border-style:solid ;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-color: #00E7FF;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    height: auto;
+    background-color: #10101D;
+    border-radius: 15px;
+    padding:  10px;
+    transition: 0.5s;
+    
+}
+
+.toDoContainer {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    
+}
+
+.toDoElement {
+    display: flex;
+    padding: 10px; 
+    font-size: 25px;
+    width: 450px;
+    border-radius: 3px;
+    background-color:#191933 ;
+    margin-bottom:9px ;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+.toDoElement:hover {
+    background-color: #58287F;
+}
+
+.title {
+    padding: 0 10px;
+}
+
+.formDiv {
+    display: flex;
+}
+
+.clearButton {
+    background-color: #10101D;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.clearButton:hover {
+    background-color: #7F167F;
+}
+
+.inputZone {
+  width: 650px;  
+}
+
+.innerText {
+    cursor: pointer;
+    user-select: none;
+}
+
+#deleteBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.deleteButton {
+    background-color: red;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.deleteButton:hover {
+    width: 100px;
+}
+
+.deleteButton:active {
+    background-color: #CF0A0A;
+}

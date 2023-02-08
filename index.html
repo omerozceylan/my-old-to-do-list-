@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit&family=Lato&family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="title">
+                <h1>To do list</h1>
+                <h3 id="alert"></h3>
+            </div> 
+                <div class="input-box">
+                    <div class="inputBoxInner">
+                        <form id="form">
+                            <div class="formDiv">
+                                <input id="input" autocomplete="off" type="text" size="50" placeholder="Add new task">
+                                <button type="submit" id="submitButton">+</button>
+                            </div>
+                        </form>  
+                    </div>  
+                   <div class="toDoContainer">
+                        <ul id="theToDoList">
+                         <!--   <li class="toDoElement">Merhabagdfsgsdfgsdfjgfhjgfhj <button class="clearButton">x</button></li>
+                            <li class="toDoElement">Merhaba <button class="clearButton">x</button></li>
+                            <li class="toDoElement">Merhaba <button class="clearButton">x</button></li>
+                            <li class="toDoElement">Merhaba <button class="clearButton">x</button></li>-->
+                        </ul>
+                    </div>
+            </div>
+            <div id="deleteBox">
+
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
