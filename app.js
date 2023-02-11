@@ -1,12 +1,21 @@
 let formNode = document.querySelector('#form')
 let inputNode = document.querySelector('#input')
 let todoList = document.querySelector('#theToDoList')
+const alertNode = document.querySelector('#alert')
+
 
 formNode.addEventListener("submit", getInput)
 
+//listCount is counting the list elements
+let listCount
+
 function getInput(event){
     event.preventDefault()
-    const listCount = todoList.getElementsByTagName("li").length+1
+    listCount = todoList.getElementsByTagName("li").length+1
+    if(listCount==7){
+        alertNode.style.display = "block"
+    }
+
     if(inputNode.value==="" || listCount==7) return 
     createElement(inputNode.value)
 }
