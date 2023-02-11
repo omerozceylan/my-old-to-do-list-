@@ -19,6 +19,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    height: 90vh;   
+    align-items: center;
 }
 
 label {
@@ -65,14 +69,18 @@ label {
     border-width: 0px;
     border-bottom-width: 1px;
     border-color: #00E7FF;
+    transition: 0.5s;
+}
 
+#input:focus {
+    border-color: azure;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: auto;
 }
 
 .box {
@@ -140,6 +148,9 @@ label {
 .innerText {
     cursor: pointer;
     user-select: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 #deleteBox {
@@ -166,4 +177,55 @@ label {
 
 .deleteButton:active {
     background-color: #CF0A0A;
+}
+
+#alert{
+    text-align: center;
+    font-size: 14px;
+    color: gold;
+    transition: 0.3s;
+    
+}
+
+@media (max-width: 620px) {
+    .inputBoxInner {
+        padding: 0px 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 400px;
+    }
+
+    .toDoElement {
+        width: 300px;
+    }
+
+    .toDoContainer {
+        padding-right: 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .inputBoxInner {
+        padding: 0px 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        margin: 0 30px;
+        width: 330px;
+    }
+
+    .toDoElement {
+        width: 230px;
+    }
+
+    .toDoContainer {
+        padding-right: 20px;
+    }
+
 }
