@@ -28,5 +28,6 @@ function createElement(text){
 
 function deleteItem(item){
     item.parentElement.remove()
+    alertNode.style.display = "none"
 }
 
