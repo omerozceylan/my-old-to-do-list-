@@ -22,7 +22,7 @@ function getInput(event){
 
 function createElement(text){
     inputNode.value = ""
-    let html = `<li class="toDoElement">${text}<button class="clearButton" onclick="deleteItem(this)">x</button></li>`
+    let html = `<li class="toDoElement"><span>${text}</span><button class="clearButton" onclick="deleteItem(this)">x</button></li>`
     todoList.insertAdjacentHTML("beforeend", html)
 }
 

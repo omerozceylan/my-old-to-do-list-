@@ -114,6 +114,9 @@ label {
     flex-direction: row;
     justify-content: space-between;
     transition: 0.3s;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
 }
 
 .toDoElement:hover {
@@ -187,6 +190,12 @@ label {
     display: none;
 }
 
+span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 @media (max-width: 620px) {
     .inputBoxInner {
         padding: 0px 20px;
@@ -234,6 +243,7 @@ label {
     #theToDoList {
         margin: 0;
         padding: 0;
+        padding-bottom: 20px;
     }
 
 }
