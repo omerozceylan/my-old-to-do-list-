@@ -20,10 +20,15 @@ function getInput(event){
     createElement(inputNode.value)
 }
 
+
+
+let toDoInnerTexts = document.querySelectorAll('.inner-text-element')
+
 function createElement(text){
     inputNode.value = ""
     let html = `<li class="toDoElement"><span>${text}</span><button class="clearButton" onclick="deleteItem(this)">x</button></li>`
     todoList.insertAdjacentHTML("beforeend", html)
+    toDoInnerTexts = document.querySelectorAll('.inner-text-element')
 }
 
 function deleteItem(item){
@@ -31,3 +36,9 @@ function deleteItem(item){
     alertNode.style.display = "none"
 }
 
+toDoInnerTexts.forEach((element)=> {
+    element.addEventListener('click',function(){
+        element.style.textDecoration = "underline"
+        console.log('sfdasgd');
+    })
+})
