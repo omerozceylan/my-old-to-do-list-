@@ -1,4 +1,4 @@
-# my-old-to-do-list-
+# to do list
 My to do list project which is i forget to put into my github
 
 this project has very unique idea i think. Am i right ?
