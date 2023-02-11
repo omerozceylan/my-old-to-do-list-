@@ -11,10 +11,10 @@ So, i rewrite my project.
 
 Here's the difference in codes;
 
-##before
+## before
 
 ![Screenshot_3](https://user-images.githubusercontent.com/42185275/218253003-583a01b4-82d6-4c45-854d-37febed5ae6d.jpg)
 
-##after
+## after
 
 ![Screenshot_3](https://user-images.githubusercontent.com/42185275/218253059-f9658c5a-7b88-4940-8380-017d7590e6be.jpg)
